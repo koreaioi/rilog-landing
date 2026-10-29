@@ -141,7 +141,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .colog code{font-family:inherit;font-weight:700;color:#fff;background:rgba(255,255,255,.1);padding:1px 7px;border-radius:5px}
 
 /* numbers */
-.nums{padding-top:120px}
+.nums{padding-top:8px;padding-bottom:72px}
 .nums .head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .nums h2{font-size:clamp(24px,3vw,34px);font-weight:800;letter-spacing:-0.035em}
 .nums .when{font-size:14px;color:var(--ink-3)}
@@ -173,7 +173,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   .stat:nth-child(2){border-right:0}
   .stat:nth-child(3){padding-left:0}
   .stat:nth-child(n+3){border-top:1px solid var(--line)}
-  .sec,.nums{padding-top:88px}
+  .sec{padding-top:88px}
+  .nums{padding-bottom:56px}
   .rule,.colog{margin-top:88px}
 }
 @media (max-width:640px){
@@ -219,6 +220,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
       <a class="btn solid" href="https://www.rilog.kr/feeds">Rilog. 시작하기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn ghost" href="https://www.rilog.kr/the-rilog">오늘의 The Rilog. 보기</a>
     </div>
+  </section>
+
+  <section class="nums wrap" aria-label="Rilog. 숫자">
+    <div class="head"><h2>지난 2주, Rilog.에서는</h2><span class="when">2026년 10월 기준</span></div>
+    <div class="grid4">
+      <div class="stat"><div class="v">111<small>명</small></div><div class="l">함께 읽고 쓰는 사람</div></div>
+      <div class="stat"><div class="v">71<small>편</small></div><div class="l">새로 발행된 글</div></div>
+      <div class="stat"><div class="v">889<small>개</small></div><div class="l">문장에 남긴 인라인 댓글</div></div>
+      <div class="stat"><div class="v">12.52<small>개</small></div><div class="l">글 한 편당 평균 인라인 댓글</div></div>
+    </div>
+    <p class="foot">글 한 편마다 열두 번이 넘는 대화가 문장 옆에서 오갔어요.</p>
   </section>
 
   <section class="demo wrap" aria-label="Rilog. 기능 소개 영상">
@@ -304,17 +316,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
     <section class="colog reveal" aria-label="Colog 소개">
       <div class="eq">Colog <span>=</span><br>Cooperation <span>+</span> Blog</div>
       <p><code>Colog</code>는 팀 단위의 블로그예요. 프로젝트를 이끌어온 깊은 고민부터 함께 웃었던 소소한 순간까지, 각자의 시선으로 함께한 시간을 기록합니다. 그렇게 쌓인 글에는 한 팀의 지식과 문화, 그리고 그 안에서 성장한 사람들의 이야기가 담깁니다.</p>
-    </section>
-
-    <section class="nums reveal" aria-label="Rilog. 숫자">
-      <div class="head"><h2>지난 2주, Rilog.에서는</h2><span class="when">2026년 10월 기준</span></div>
-      <div class="grid4">
-        <div class="stat"><div class="v">111<small>명</small></div><div class="l">함께 읽고 쓰는 사람</div></div>
-        <div class="stat"><div class="v">71<small>편</small></div><div class="l">새로 발행된 글</div></div>
-        <div class="stat"><div class="v">889<small>개</small></div><div class="l">문장에 남긴 인라인 댓글</div></div>
-        <div class="stat"><div class="v">12.52<small>개</small></div><div class="l">글 한 편당 평균 인라인 댓글</div></div>
-      </div>
-      <p class="foot">글 한 편마다 열두 번이 넘는 대화가 문장 옆에서 오갔어요.</p>
     </section>
   </div>
 
